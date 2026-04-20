@@ -597,7 +597,7 @@ function gradePJ(score){ return gradeSej(score); }
     let Pe = isFormative ? 0 : gradePJ(pjMark) * pjCredit;
 
     let total = Bm+Bi+Mt+Admt+Sic+Kim+Gy+Sj+Pi+Pe;
-    let purata = total / (51 + parseInt(pjCredit));
+    let purata = total / (55 + parseInt(pjCredit));
     document.getElementById("result").innerHTML = "PNG anda ialah: " + purata.toFixed(3);
 
     let message = "";
