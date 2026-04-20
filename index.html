@@ -587,13 +587,13 @@ function gradePJ(score){ return gradeSej(score); }
     let Bm = gradeBM(melayu)*6;
     let Bi = gradeBI(inggeris)*6;
     let Mt = gradeMath(math)*6;
-    let Admt = gradeAddMath(addmath)*6;
-    let Sic = gradePhy(phy)*6;
-    let Kim = gradeChem(chem)*6;
+    let Admt = gradeAddMath(addmath)*7;
+    let Sic = gradePhy(phy)*7;
+    let Kim = gradeChem(chem)*7;
     let Sj = gradeSej(sej)*4;
     let Pi = gradeIslam(islam)*5;
     let subjekDipilih = document.getElementById("subjek").value;
-    let Gy = subjekDipilih === "bio" ? gradeBio(bio)*6 : gradeAkaun(bio)*6;
+    let Gy = subjekDipilih === "bio" ? gradeBio(bio)*7 : gradeAkaun(bio)*7;
     let Pe = isFormative ? 0 : gradePJ(pjMark) * pjCredit;
 
     let total = Bm+Bi+Mt+Admt+Sic+Kim+Gy+Sj+Pi+Pe;
